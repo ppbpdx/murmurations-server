@@ -1,4 +1,4 @@
-# Simple GraphQL Node Server
+# Simple GraphQL Profile Server
 This example is a simple Flask Python implementation of a server that updates from the Murmurations directory and
 serves up the results using a GraphQL API. 
 
