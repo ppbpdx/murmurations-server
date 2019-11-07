@@ -2,6 +2,16 @@
 This example is a simple Flask Python implementation of a server that updates from the Murmurations directory and
 serves up the results using a GraphQL API. 
 
+#### What it does
+The server consists of a simple api and cache of profile data (murmurations). The cache is loaded by making a request to
+murmurations index server, taking the profiles that are available and caching them in a local database. The cached 
+profiles are then exposed through a GraphQl query API. 
+
+The GraphQL API gives developers a lot of flexibility over
+what data they want, how to shape the data when it is returned and many other cool things.
+
+More information about the query and mutation mechanisms take a look at https://graphql.org/learn/
+
 The data is cached in a SqlLite database for simplicity, however, this can be swapped out for another RDBMS in the 
 configuration. See Flask documentation for details.
 
@@ -54,3 +64,10 @@ query{
   }
 }
 ```
+
+#### Todo
+There are a lot of ways this could be enhanced...
+* Update cache automation based on time config
+* Data mapping rules and configuration
+* CRUD functions for profiles
+* Other good ideas...
