@@ -21,7 +21,7 @@ promise==2.2.1
 python-box==3.4.5
 python-dateutil==2.8.0
 python-editor==1.0.4
-requests==2.22.0
+requests==2.31.0
 Rx==1.6.1
 singledispatch==3.4.0.3
 six==1.12.0
